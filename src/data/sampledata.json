@@ -1,0 +1,52 @@
+{
+  "BloggItems": [
+    {
+      "id": 1,
+      "header": "E3 2018 del två",
+      "body": "Då var det dags för del två av vårt speciell avsnitt om årets E3 mässa. Vi fortsätter med att ta tempen på Square Enix och resterande utgivare. Till slut så avslutar vi med att prata om våra favorit titlar och blickar framåt.",
+      "media": "Sound",
+      "comments": [
+        {
+          "id": 1,
+          "title": "Jag gillade programet men jag saknade mer info om vissa Nintendo spel"
+        },
+        {
+          "id": 2,
+          "title": "Jag gillade programet men jag saknade mer info om vissa Nintendo spel"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "header": "Secound Header",
+      "body": "First text",
+      "media": "Youtube",
+      "comments": [
+        {
+          "id": 3,
+          "title": "Jag gillade programet men jag saknade mer info om vissa Nintendo spel"
+        },
+        {
+          "id": 4,
+          "title": "Jag gillade programet men jag saknade mer info om vissa Nintendo spel"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "header": "Third Header",
+      "body": "First text",
+      "media": "Youtube",
+      "comments": [
+        {
+          "id": 5,
+          "title": "Jag gillade programet men jag saknade mer info om vissa Nintendo spel"
+        },
+        {
+          "id": 6,
+          "title": "Jag gillade programet men jag saknade mer info om vissa Nintendo spel"
+        }
+      ]
+    }
+  ]
+}
