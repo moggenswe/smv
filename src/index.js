@@ -7,6 +7,7 @@ import thunk from 'redux-thunk';
 
 import reducers from './reducers';
 import routes from './routes';
+import * as serviceWorker from './serviceWorker';
 
 const middleware = process.env.NODE_ENV !== 'production' ?
   [require('redux-immutable-state-invariant').default(), thunk] :
@@ -25,3 +26,8 @@ ReactDOM.render(
     <Router history={hashHistory} routes={routes} />
   </Provider>
   , document.querySelector('.app'));
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();
