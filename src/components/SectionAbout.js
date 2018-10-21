@@ -6,10 +6,6 @@ class SectionAbout extends Component {
 
     state = {YT:{isHovered:true},SC:{isHovered:true}}
 
-    constructor(props) {
-        super(props);
-    }
-
     toggleMediaIcon = (icon) => {
        
         this.setState( (prevState, props) => ({
@@ -29,10 +25,15 @@ class SectionAbout extends Component {
                 <div className="section-about-containter">
                     <div className="section-about-left">
                         <h3 className="heading-tertiary mb-1">Hur det startade</h3>
-                        <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis tristique libero. Nam vel tempus lorem. Morbi aliquam, quam sit amet tincidunt convallis, nisl nulla condimentum metus, ac lacinia purus elit sit amet nulla. Etiam id turpis neque. Ut non libero ac velit mattis porta.</p>
-                        <h3 className="heading-tertiary mb-1">Vår vision</h3>
                         <p className="paragraph">
-                            Cras leo leo, dapibus vel consequat vel, lacinia vitae enim. Nam condimentum enim orci, lobortis feugiat velit luctus ut. Nunc venenatis malesuada pharetra. Vivamus semper et lorem eget ullamcorper. Vivamus tristique augue non ligula semper rutrum. Sed quis libero rutrum, elementum dui a, vestibulum diam. Quisque mollis placerat purus eu eleifend. Pellentesque eget neque mollis, hendrerit felis id, sodales risus.</p>
+                        Det hela startade en vacker vårdag på en Kinakorg i södra stockholm. Där Spelfarsan och Bas Master tyckte
+                        att i och med att vi ändå alltid pratar spel varför inte dela detta med en publik. Sagt och gjort skapades Spelfarsan med vänner.    
+                        </p>
+                        <h3 className="heading-tertiary mb-1">Varför är vi här</h3>
+                        <p className="paragraph">
+                        Vårt främsta mål att främja gaming i stort och ta det till kulturens finrum. 
+                        Vi tar upp alla typer av ämnen som har någon form av koppling till gaming och vi har gärna med gäster.     
+                        </p>
                     </div>
                     <div className="section-about-right">
                         <div className="section-about-image-box" >

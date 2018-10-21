@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MediaContent from './MediaContent';
 import CommentList from './CommentList';
 
 const BloggItem = (props) => {
-
     return (
 		<div className="card my-2">
 			<div className="card-header">
@@ -19,7 +18,7 @@ const BloggItem = (props) => {
                         <p className="blog-item-paragraph">{props.data.body}</p>
                     </div>
                     <div style={{flex:"45%"}}>
-                       <CommentList comments={props.data.comments}  />
+                       <CommentList comments={props.data.comments} id={props.data.id}  />
                     </div>
                 </div>
             </div>

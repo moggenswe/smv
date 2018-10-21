@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import CommentItem from './CommentItem';
+import {connect} from 'react-redux';
+import {addCommentToPost} from '../actions/index';
 
-export default class CommentList extends Component {
+class CommentList extends Component {
 
 
 	constructor(props) {
+
 		super(props);
-		this.state = {comment: '', comments: props.comments};
+		this.state = {postId:(props.id -1), comment: '', comments: props.comments};
 		this.handleChange = this.handleChange.bind(this);
 		this.saveComment = this.saveComment.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
-		
-
 	}
 
 	 handleChange(event) {
@@ -19,11 +20,8 @@ export default class CommentList extends Component {
   	}
 
 	saveComment() {
-		let comment = this.state.comments;
-		comment.push( { title:this.state.comment } );
-		this.setState({comments:comment});
+		this.props.addComment(this.state.postId,{ title: this.state.comment });	
 		this.setState({comment:''});
-		
 	}
 
 	handleSubmit(event) {
@@ -32,17 +30,16 @@ export default class CommentList extends Component {
 	}
 
 	render() {
-
-		/*
-
-		 */
-
+		const {comments} = this.props;
+		if(!comments) {
+			return <div>Loading..</div>
+		}
 		return (
 			<div className="commet-box">
 				 <h5 className="heading-tertiary">Kommentarer</h5>
 				<ul className="list-group list-group-flush small">
-					{this.props.comments.map(
-						(comment, index) => <CommentItem key={index} comment={comment} /> 
+					{ Object.keys(this.props.comments).map(
+						(key, index) =>  <CommentItem key={index} comment={comments[key]} />
 					)}	
 				</ul>
                 <div  className="row mt-2">
@@ -64,3 +61,11 @@ export default class CommentList extends Component {
 		);
 	} 
 }
+
+const mapDispatchToProps = dispatch => {
+    return {
+        addComment: (id,comment) => dispatch( addCommentToPost(id,comment) )
+    }
+}
+
+export default connect(null, mapDispatchToProps )(CommentList);

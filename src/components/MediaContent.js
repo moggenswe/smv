@@ -1,21 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const MEDIATYPE_YOUTUBE = 'Youtube';
+const MediaContent = (props) => {
+	const { mediaSrc, media } = props.data;
 
-export default class MediaContent extends Component {
+	const content = media !== MEDIATYPE_YOUTUBE ?  
+	<iframe title="Media" width="100%" height="150" scrolling="no" frameBorder="no" allow="autoplay"
+	src={mediaSrc}></iframe> :  
+	<iframe width="100%" title="Meida" height="315" src="https://www.youtube.com/embed/yHejDkC4LMA" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>;
 
-	constructor({ media, props }){
-		super(props);
-	}
-
-	render() {
-		
-		if( this.media == MEDIATYPE_YOUTUBE) {
-			return <div>YT player</div>
-		} else {
-           return <iframe width="100%" height="150" scrolling="no" frameBorder="no" allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/467387487&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe>
-		}
-		
-	}
+	return content;
 }
+export default MediaContent;

@@ -1,5 +1,6 @@
-import {FETCH_POSTS} from '../actions/index';
 import * as actionTypes from '../actions/actionTypes'
+
+
 const INITIAL_STATE = { all: null, post: null, loaded:false };
 
 export default function(state = INITIAL_STATE, action ) {

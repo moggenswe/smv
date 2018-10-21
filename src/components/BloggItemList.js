@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router';
+
 import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
 import {fetchPosts} from '../actions/index';
 import BloggItem from './BloggItem';
 import Header from './Header';
@@ -12,7 +11,7 @@ import SectionMembers from './SectionMembers';
 
 class BloggItemList extends Component {
 
-	componentWillMount() {
+	componentDidMount() {
 		if(!this.props.posts) {
 			this.props.fetch();	
 		}

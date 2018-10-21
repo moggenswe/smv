@@ -37,8 +37,6 @@ export const updatePost = (data,id) => {
 		formData.append('update',true);
 
 		axios.post('http://smv.local/test.php',formData).then( response => {
-			
-			const {data} = response;
 			dispatch({
 				type: actionTypes.UPDATE_POST,
         		payload: {formData,id}

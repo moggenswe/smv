@@ -1,5 +1,4 @@
-import {ADD_POSTS} from '../actions/media';
-import {ERROR} from '../actions/media';
+
 
 const INITIAL_STATE = {};
 
