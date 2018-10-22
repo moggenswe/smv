@@ -28,7 +28,7 @@ class BloggItemList extends Component {
 		<span>
 			<Header></Header>
 			<SectionAbout></SectionAbout>
-			<SectionTitle title="Programets medlemar"></SectionTitle>
+			<SectionTitle title="Programets medlemmar"></SectionTitle>
 			<SectionMembers></SectionMembers>
 			<div className="container">
                 {this.props.posts.map(

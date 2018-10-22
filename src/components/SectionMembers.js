@@ -30,9 +30,9 @@ const SectionMembers = (props) => {
                     <h5>AKA Peter</h5>
                     <div style={{ textAlign: "left", padding: "2rem 0" }}>
                         <ul>
-                            <li>favoritspel: warcraft II</li>
-                            <li>favoritglass: magnum mandel-skalet</li>
-                            <li>favoritskostorlek: italiensk 36</li>
+                            <li>favoritspel: Final Fantasy 6</li>
+                            <li>favoritglass: N_gger Black</li>
+                            <li>favoritskostorlek: Tysk 44</li>
                         </ul>
                     </div>
                 </div>

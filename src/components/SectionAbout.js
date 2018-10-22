@@ -19,14 +19,14 @@ class SectionAbout extends Component {
             <section className="section-about">
                 <div style={{ width: "100%", padding: "20px", textAlign: "center" }}>
                     <h2 className="heading-secondary">
-                        Programet med det lilla extra
+                        Programmet med det lilla extra
                     </h2>
                 </div>
                 <div className="section-about-containter">
                     <div className="section-about-left">
                         <h3 className="heading-tertiary mb-1">Hur det startade</h3>
                         <p className="paragraph">
-                        Det hela startade en vacker vårdag på en Kinakorg i södra stockholm. Där Spelfarsan och Bas Master tyckte
+                        Det hela startade en vacker vårdag på en Kinakrog i södra stockholm. Där Spelfarsan och Bas Master tyckte
                         att i och med att vi ändå alltid pratar spel varför inte dela detta med en publik. Sagt och gjort skapades Spelfarsan med vänner.    
                         </p>
                         <h3 className="heading-tertiary mb-1">Varför är vi här</h3>
