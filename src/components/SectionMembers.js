@@ -14,7 +14,7 @@ const SectionMembers = (props) => {
                     <h5>AKA Oscar</h5>
                 </div>
                 <div style={{ textAlign: "left", padding: "2rem 0" }}>
-                    <ul>
+                    <ul style={{ fontSize: "1.4rem"}}> 
                         <li>favoritspel: Chron Trigger</li>
                         <li>favoritglass: Magnum White</li>
                         <li>favoritskostorlek: 42</li>
@@ -29,7 +29,7 @@ const SectionMembers = (props) => {
                     <h2 className="heading-tertiary">Bas Master</h2>
                     <h5>AKA Peter</h5>
                     <div style={{ textAlign: "left", padding: "2rem 0" }}>
-                        <ul>
+                        <ul style={{ fontSize: "1.4rem"}}>
                             <li>favoritspel: Final Fantasy 6</li>
                             <li>favoritglass: N_gger Black</li>
                             <li>favoritskostorlek: Tysk 44</li>
@@ -45,7 +45,7 @@ const SectionMembers = (props) => {
                     <h2 className="heading-tertiary">Slient Hilly</h2>
                     <h5>Linda</h5>
                     <div style={{ textAlign: "left", padding: "2rem 0" }}>
-                        <ul>
+                        <ul style={{ fontSize: "1.4rem"}}>
                             <li>favoritspel: Warcraft II</li>
                             <li>favoritglass: Magnum mandel-skalet</li>
                             <li>favoritskostorlek: italiensk 36</li>
