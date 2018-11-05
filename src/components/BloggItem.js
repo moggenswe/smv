@@ -6,7 +6,9 @@ const BloggItem = (props) => {
     return (
 		<div className="card my-2">
 			<div className="card-header">
-                 {props.data.media === "Youtube" ?  [<i className="fab fa-youtube"></i>, " Youtube klipp"]  :  [<i className="fab fa-soundcloud"></i>, " Poddavsnitt"] }
+                {props.data.media === "Youtube" ?
+                    [<i key={"q1"} className="fab fa-youtube"></i>, " Youtube klipp"]
+                    : [<i key={"q2"} className="fab fa-soundcloud"></i>, " Poddavsnitt"]}
             </div>
             <div className="card-body">
                 <div className="blogg-item-media">

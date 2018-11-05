@@ -4,7 +4,7 @@ import React from 'react';
 const SectionMembers = (props) => {
 
     return (
-        <section className="section-members">
+        <section className="section-members container">
             <div className="member-card">
                 <div className="member-card--image">
                     <img src="../img/spelfarsan.jpg" alt="Oscar" />

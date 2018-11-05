@@ -19,7 +19,6 @@ export const fetchPosts = () => {
 
 export const addCommentToPost = (id,comment) => {
 	return dispatch => {
-		console.log("act",id,comment);
 		fb.database().ref(`BloggItems/${id}/comments`).push(comment).then(function (snapshot) {
 			
 		}).catch(error => {

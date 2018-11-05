@@ -2,12 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
-import {Router, hashHistory} from 'react-router';
 import thunk from 'redux-thunk';
-
 import reducers from './reducers';
-import routes from './routes';
 import * as serviceWorker from './serviceWorker';
+import App from './components/app';
 
 const middleware = process.env.NODE_ENV !== 'production' ?
   [require('redux-immutable-state-invariant').default(), thunk] :
@@ -23,7 +21,7 @@ const store = createStore(reducers, composeEnhancers(
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router history={hashHistory} routes={routes} />
+   <App></App>
   </Provider>
   , document.querySelector('.app'));
 

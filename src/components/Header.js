@@ -4,8 +4,8 @@ const Header = (props) => {
 
     return (
         <header className="header">
-            <div className="logo-box">
-                <img src="/img/logo-bw.svg" alt="Logo" className="logo" />
+            <div className="header__logobox">
+                <img src="/img/logo-bw.svg" alt="Logo" className="header__logobox--logo" />
             </div>
             <div className="text-box">
                 <h1 className="heading-primary">
