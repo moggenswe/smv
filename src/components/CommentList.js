@@ -31,17 +31,15 @@ class CommentList extends Component {
 
 	render() {
 		const {comments} = this.props;
-		if(!comments) {
-			return <div>Loading..</div>
-		}
+	
 		return (
 			<div className="commet-box">
 				 <h5 className="heading-tertiary">Kommentarer</h5>
-				<ul className="list-group list-group-flush small">
+				{comments && <ul className="list-group list-group-flush small">
 					{ Object.keys(this.props.comments).map(
 						(key, index) =>  <CommentItem key={index} comment={comments[key]} />
 					)}	
-				</ul>
+				</ul>}
                 <div  className="row mt-2">
                     <div className="comment-form">
                         <form onSubmit={this.handleSubmit}>

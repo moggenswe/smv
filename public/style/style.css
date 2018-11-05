@@ -13,6 +13,34 @@ body {
   color: #777;
 }
 
+
+/*************** STICKY *************/
+.sticky-container {
+    position: fixed; 
+    bottom:-45px; 
+    right: 5px; 
+    width: 40px; 
+    height: 40px; 
+    z-index: 1000; 
+    margin-top: 0;
+    transform: translate(0,-75px);
+    background-color: #222;
+    -webkit-mask: url('/img/icons/email.svg') center no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    mask: url('/img/icons/email.svg') center no-repeat;
+    transition: background-color 500ms linear;
+    text-decoration: none;
+    display: block;
+
+  }
+  
+  .sticky-container:hover {
+    background-color: rgba(119, 119, 119, 1);
+    cursor: pointer;
+  }
+
+/*************** END STICKY *************/
 /****************** HEADER *************/
 .header {
     height: 95vh;
@@ -47,48 +75,7 @@ body {
     color: #fff;
     text-transform: uppercase;
 }
-
-
 /*************** END HEADER *************/
-
-
-
-.sticky-container {
-    position: fixed; 
-    bottom:-45px; 
-    right: 5px; 
-    width: 40px; 
-    height: 40px; 
-    z-index: 1000; 
-    margin-top: 0;
-    transform: translate(0,-75px);
-    background-color: #222;
-    -webkit-mask: url('/img/icons/email.svg') center no-repeat;
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    mask: url('/img/icons/email.svg') center no-repeat;
-    transition: background-color 500ms linear;
-    text-decoration: none;
-    display: block;
-
-  }
-  .sticky-container:hover {
-    background-color: rgba(119, 119, 119, 1);
-    cursor: pointer;
-   
-  }
-
-.list-group-item  {
-    font-size: 1.4rem;
-}
-
-.blog-item-paragraph {
-    white-space: pre-line;
-}
-
-.blog-item-card {
-    display: flex;
-}
 
 .heading-primary-main {
     display: block;
@@ -103,6 +90,37 @@ body {
     font-weight: 400;
     letter-spacing: 17px;
 }
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, rgb(198, 115, 0), rgb(198, 34, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+}
+.paragraph:not(:last-child) {
+    margin-bottom: 3rem; 
+}
+
+.my-container {
+    width: 100%;
+}
+
+/*************** SECTION ABOUT *************/
 .section-about {
   padding: 30rem 10rem 10rem 10rem;
   margin-top: -20vh; 
@@ -148,9 +166,8 @@ body {
     cursor: pointer;
 }
 
-.my-container {
-  width: 100%;
-}
+/*************** END SECTION ABOUT *************/
+/*************** SECTION MEMBERS *************/
 
 .section-members {
     padding: 10rem 5rem;
@@ -181,31 +198,6 @@ body {
     margin: 1rem auto
 }
 
-.heading-secondary {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  display: inline-block;
-  background-image: linear-gradient(to right, rgb(198, 115, 0), rgb(198, 34, 0));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  letter-spacing: .2rem;
-}
-
-.heading-tertiary {
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.paragraph {
-    font-size: 1.6rem;
-}
-.paragraph:not(:last-child) {
-    margin-bottom: 3rem; 
-}
-
 .section-members {
     margin-top: -10rem;
 }
@@ -218,6 +210,8 @@ body {
     margin-bottom: 1rem;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
 }
+
+/*************** END SECTION MEMBERS *************/
 
 .navbar {
     padding-top: 0!important;
@@ -259,6 +253,18 @@ li .fa-soundcloud, li .fa-youtube, li .fa-itunes {
     padding-top: 5.5rem;
 }
 
+.list-group-item  {
+    font-size: 1.4rem;
+}
+
+.blog-item-paragraph {
+    white-space: pre-line;
+}
+
+.blog-item-card {
+    display: flex;
+}
+
 .commet-box {
     flex: 45%;
     margin-left: 10%;
@@ -271,6 +277,7 @@ li .fa-soundcloud, li .fa-youtube, li .fa-itunes {
 .btn-primary {
     height: 3rem;
     width: 9rem;
+    font-size: 1.6rem;
 }
 
 .blogg-item-media {
@@ -294,6 +301,10 @@ li .fa-soundcloud, li .fa-youtube, li .fa-itunes {
 
 .blog-item-paragraph {
     font-size:1.6rem;
+}
+
+.form-control {
+    font-size: 1.6rem;
 }
 
 @media screen and (max-width: 420px) {
